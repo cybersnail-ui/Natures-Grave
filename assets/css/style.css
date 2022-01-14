@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+header, footer, .scene {
+    height: 100vh;
+}
+
+header {
+    background-color: blue;
+}
+
+footer {
+    background-color: green;
+}
+
+.scene {
+    background-color: yellow;
+}
+
+.fixed-section img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    /* width: 100% this will keep the comic consistant going down the page */
+}
