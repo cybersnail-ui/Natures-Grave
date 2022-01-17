@@ -44,7 +44,7 @@ footer {
     background-color: yellow;
 }
 
-.scene .fixed-section {
+.scene-one .fixed-section {
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -58,6 +58,16 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 .title {
@@ -74,4 +84,80 @@ footer {
     text-shadow: 0px 4px 3px rgba(0,0,0,0.5),
                0px 8px 10px rgba(0,0,0,0.2),
                0px 18px 20px rgba(0,0,0,0.2);
+}
+
+
+h2 {
+    font-family: 'Quattrocento';
+    color: white;
+    font-size: calc(12px + 2vw);
+}
+
+p {
+    font-family: 'Fanwood Text';
+    color: white;
+    font-size: calc(12px + 1vw);
+}
+
+.divider {
+    height: 2px;
+    width: 20rem;
+    background-color: #89A26B;
+    margin: 1rem 0;
+}
+
+.scene-two {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.scene-two .section-one{
+    width: 50%;
+}
+
+.scene-two .section-two {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    margin-right: 3rem;
+}
+
+.scene-two .section-one img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.scene-three {
+    display: flex;
+    height: 50vh;
+    background-color: black;
+    padding: 3rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.scene-three .section-one {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.scene-three .section-one .one {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.scene-three .section-one .two {
+    flex-grow: 1;
+    height: 100%; 
+}
+
+.scene-three .section-one .three {
+    flex-grow: 1;
+    height: 100%;
 }

@@ -10,11 +10,11 @@ scene1.add(
 );
 
 const scene2 = new ScrollMagic.Scene({
-    triggerElement: '.one',
+    triggerElement: '.scene-one',
     duration: 1000,
     triggerHook: 0,
 })
 .setTween(scene1)
 .addIndicators()
-.setPin('.one')
+.setPin('.scene-one')
 .addTo(controller)
