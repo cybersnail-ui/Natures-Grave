@@ -86,6 +86,11 @@ footer {
                0px 18px 20px rgba(0,0,0,0.2);
 }
 
+h3 {
+    color: white;
+    font-family: 'Fanwood Text';
+    font-size: calc(12px + 1.5vw);
+}
 
 h2 {
     font-family: 'Quattrocento';
@@ -97,6 +102,10 @@ p {
     font-family: 'Fanwood Text';
     color: white;
     font-size: calc(12px + 1vw);
+}
+
+.margin-top {
+    margin-top: 2rem;
 }
 
 .divider {
