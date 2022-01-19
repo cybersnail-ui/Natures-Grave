@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Cinzel';
-    src: url('/assets/fonts/Cinzel-Bold.woff') format('woff');
+    src: url('assets/fonts/Cinzel-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Fanwood Text';
-    src: url('/assets/fonts/FanwoodText-Regular.woff') format('woff');
+    src: url('assets/fonts/FanwoodText-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'Quattrocento';
-    src: url('/assets/fonts/Quattrocento.woff') format('woff');
+    src: url('assets/fonts/Quattrocento.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
