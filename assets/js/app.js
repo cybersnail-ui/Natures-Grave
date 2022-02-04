@@ -15,6 +15,6 @@ const scene2 = new ScrollMagic.Scene({
     triggerHook: 0,
 })
 .setTween(scene1)
-//.addIndicators()
+.addIndicators()
 .setPin('.scene-one')
 .addTo(controller)

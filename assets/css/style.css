@@ -28,12 +28,36 @@
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 952px) {
+    .scene-two {
+        flex-direction: column;   
+    }
+    .scene-two .section-two {
+        margin-right: 0 !important;
+        margin-top: 2rem;
+    }
+    .scene-two .section-one {
+        width: 80% !important;
+    }
+}
+
+
 header, footer, .scene {
     height: 100vh;
 }
 
 header {
     background-color: blue;
+}
+
+html {
+    background-color: black;;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: black;
 }
 
 footer {
@@ -44,15 +68,21 @@ footer {
     background-color: yellow;
 }
 
+.scene-one {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: lightblue;
+}
+
 .scene-one .fixed-section {
-    width: 100vw;
-    height: 100vh;
+    width: 100% !important;
+    height: 100% !important;
     position: relative;
 }
 
 .fixed-section img {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     margin: 0;
     width: 100%;
@@ -110,7 +140,7 @@ p {
 
 .divider {
     height: 2px;
-    width: 20rem;
+    width: 5rem;
     background-color: #89A26B;
     margin: 1rem 0;
 }
@@ -118,8 +148,8 @@ p {
 .scene-two {
     display: flex;
     align-items: center;
-    height: 100vh;
     background-color: black;
+    padding: 8rem 0;
 }
 
 .scene-two .section-one{
@@ -138,6 +168,7 @@ p {
 .scene-two .section-one img {
     object-fit: contain;
     width: 100%;
+    padding-left: 2rem;
 }
 
 .scene-three {
