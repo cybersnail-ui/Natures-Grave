@@ -13,6 +13,25 @@
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 1000px) {
+    .large {
+        display: none;
+    }
+    .small {
+        display: unset !important; 
+    }
+}
+
+.large {
+
+}
+
+.small {
+    display: none;
+}
+
+
+
 @media only screen and (max-width: 952px) {
     .scene-two {
         flex-direction: column;   
