@@ -1,22 +1,7 @@
 @font-face {
-    font-family: 'Cinzel';
-    src: url('assets/fonts/Cinzel-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Fanwood Text';
-    src: url('assets/fonts/FanwoodText-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Quattrocento';
-    src: url('assets/fonts/Quattrocento.woff') format('woff');
+    font-family: 'Bubu Ghost';
+    src: url('BubuGhost.woff2') format('woff2'),
+        url('BubuGhost.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -105,33 +90,41 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: calc(12px + 8vw);
+    font-size: calc(40px + 8vw);
     color: white;
     width: 100%;
     text-align: center;
-    font-family: 'Cinzel';
-    opacity: .8;
+    font-family: 'Bubu Ghost';
+    font-weight: 500;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.5),
                0px 8px 10px rgba(0,0,0,0.2),
                0px 18px 20px rgba(0,0,0,0.2);
 }
 
-h3 {
+.title-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-container .header {
     color: white;
-    font-family: 'Fanwood Text';
+    font-family: 'Bubu Ghost';
+    font-size: calc(40px + 8vw);
+    font-weight: 500;
+    white-space: nowrap;
+
+}
+
+.title-container .sub-header {
+    color: white;
+    font-family: 'Bubu Ghost';
     font-size: calc(12px + 1.5vw);
-}
-
-h2 {
-    font-family: 'Quattrocento';
-    color: white;
-    font-size: calc(12px + 2vw);
-}
-
-p {
-    font-family: 'Fanwood Text';
-    color: white;
-    font-size: calc(12px + 1vw);
+    white-space: nowrap;
 }
 
 .margin-top {
@@ -200,4 +193,8 @@ p {
 .scene-three .section-one .three {
     flex-grow: 1;
     height: 100%;
+}
+
+.content img {
+    width: 100%;
 }
