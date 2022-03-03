@@ -11,7 +11,7 @@ scene1.add(
     TweenLite.to(".sub-header", 1,  {
         css:{ opacity: 1 },
     })
-)
+);
 
 const scene2 = new ScrollMagic.Scene({
     triggerElement: '.scene-one',
