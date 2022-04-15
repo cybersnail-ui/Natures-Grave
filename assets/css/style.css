@@ -21,6 +21,12 @@
             box-sizing: border-box;
 }
 
+@media only screen and (max-width: 1200px) {
+    .video-container {
+        padding: 3rem 5rem !important;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     .large {
         display: none;
@@ -28,6 +34,11 @@
     .small {
         display: unset !important; 
     }
+    .footer { 
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
 .small {
@@ -52,6 +63,29 @@
     }
 }
 
+@media only screen and (max-width: 650px) {
+    .video-container {
+        padding: 3rem 2rem !important;
+    }
+}
+
+
+h1, h2, p {
+    font-family: "Bubu Ghost";
+    color: white;
+} 
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 20px; 
+}
+
+p {
+    font-size: 20px;
+}
 
 header, footer, .scene {
     height: 100vh;
@@ -73,6 +107,11 @@ body {
 
 footer {
     background-color: green;
+}
+
+.video-container {
+    padding: 5rem 15rem;
+    transition: all 0.5s ease;
 }
 
 .scene {
@@ -261,4 +300,60 @@ footer {
 
 .content img {
     width: 100%;
+}
+
+.large-preview {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: top;
+        background-image:url(/assets/img/large-preview.png);
+        width: 100%;
+        height: auto;
+        font-family: Arial, Helvetica;
+        letter-spacing: 0.02em;
+         font-weight: 400;
+        -webkit-font-smoothing: antialiased; 
+}
+
+.large-preview img {
+    width: 100%;
+    height: auto;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+}
+
+.button {
+    padding: 2rem;
+    font-size: 30px;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.members {
+    margin-top: 2rem;
+}
+
+.footer {
+    border-top: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 15rem;
+    background-image:url(/assets/img/text-box-bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
 }
