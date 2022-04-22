@@ -418,6 +418,7 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 8rem;
+    margin-bottom: 2rem;
 }
 
 .section-name p {
@@ -428,7 +429,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 10rem;
 }
 
 .button-flexbox {
@@ -581,8 +581,13 @@ footer {
     margin-top: 8rem;
 }
 
+
 #space-bottom {
     margin-bottom: 2rem;
+}
+
+#space-below {
+    margin-bottom: 10rem;
 }
 
 .teamIntro-container {
