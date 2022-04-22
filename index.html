@@ -40,42 +40,68 @@
 
 
         <div class="video-container">
-            <video width="100%" controls>
-                <source src="assets/video/demo.mp4" type="video/mp4">
-                <!-- <source src="movie.ogg" type="video/ogg"> -->
-                Your browser does not support the video tag.
-            </video>
+            <div class="video-card">
+                <video width="100%" controls>
+                    <source src="assets/video/demo.mp4" type="video/mp4">
+                    <!-- <source src="movie.ogg" type="video/ogg"> -->
+                    Your browser does not support the video tag.
+                </video>
+                <p>Watch our trailer!</p>
+            </div>
+            <div class="video-card" id="space-after">
+                <video width="100%" controls>
+                    <source src="assets/video/demo.mp4" type="video/mp4">
+                    <!-- <source src="movie.ogg" type="video/ogg"> -->
+                    Your browser does not support the video tag.
+                </video>
+                <p>View our gameplay!</p>
+            </div>
         </div>
-
+        
+        <!-- <div class="text-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod corrupti dolor quisquam similique dolore error veniam repudiandae, placeat itaque alias incidunt perspiciatis tempora quam soluta vero possimus quas aspernatur temporibus!</p>
+        </div> -->
 
         <div class="button-container">
             <button type="button" class="button" onclick="window.open('https://hab79.itch.io/natures-grave');">Play Now</button>
         </div>
 
         <div class="footer">
-            <div class="card">
-                <h1>Art & Sound Team</h1>
-                <h2>Advised by Rob Lloyd, Dan Rose, and Tony Rowe</h2>
-                <div class="members">
-                    <p>Producer - Sana Hadavi (GDAP)</p>
-                    <p>Player Animator & Level Designer - Hannah Bergman (GDAP)</p>
-                    <p>Concept and Environment Art, Enemy Design - Chris Epure (GDAP)</p>
-                    <p>Enemy Design and Animator - Liam Shea (GDAP)</p>
-                    <p>UI/UX Designer - Britney Tu (UXID)</p>
-                    <p>UI/UX Designer - Lily Raphael (UXID)</p>
-                    <p>Sound Designer - Caroline Kottmeier (FMTV)</p>
+            <div class="teamIntro-container">
+                <img src="assets/img/ng-logo-white.png">
+                <div class="description">
+                    <h1>Hello, we are the Graveyard Shift!</h1>
+                    <p>We are a group of game developers from Drexel University. We formed a team in September 2021 and since then have been working on Nature's Grave.</p>
                 </div>
             </div>
-            <div class="card">
-                <h1>Programming Team</h1>
-                <h2>Advised by Gregory Hislop</h2>
-                <div class="members">
-                    <p>Programming Lead - Penghu Chen (CS)</p>
-                    <p>UI/UX Developer - Dawei Chi (CS)</p>
-                    <p>UI/UX Developer - Tiffany Ly (CS)</p>
-                    <p>Player/Environment Developer - Cynthia Harris (CS) </p>
-                    <p>Player/Enemy/Environment Developer - Kevin Cheng (CS)</p>
-                    <p>Backend/Sound/Environment Developer - Jarod Mellus (CS)</p>
+
+
+
+            <div class="card-container" id="space">
+                <div class="card">
+                    <h1>Art & Sound Team</h1>
+                    <p>Advised by Rob Lloyd, Dan Rose, and Tony Rowe</p>
+                    <div class="members">
+                        <div class="name-container"><p>Producer - Sana Hadavi (GDAP)</p><a href="url"><img class="icon" src="assets/svg/link.svg"></a><a href="url"><img class="icon" src="assets/svg/linkedin.svg"></a></div>
+                        <div class="name-container"><p>Player Animator & Level Designer - Hannah Bergman (GDAP)</p><a href="url"><img class="icon" src="assets/svg/link.svg"></a><a href="url"><img class="icon" src="assets/svg/linkedin.svg"></a></div>
+                        <div class="name-container"><p>Concept and Environment Art, Enemy Design - Chris Epure (GDAP)</p><a href="url"><img class="icon" src="assets/svg/link.svg"></a><a href="url"><img class="icon" src="assets/svg/linkedin.svg"></a></div>
+                        <div class="name-container"><p>Enemy Design and Animator - Liam Shea (GDAP)</p><a href="url"><img class="icon" src="assets/svg/link.svg"></a><a href="url"><img class="icon" src="assets/svg/linkedin.svg"></a></div>
+                        <div class="name-container"><p>UI/UX Designer - Britney Tu (UXID)</p><a href="url"><img class="icon" src="assets/svg/link.svg"></a><a href="url"><img class="icon" src="assets/svg/linkedin.svg"></a></div>
+                        <div class="name-container"><p>UI/UX Designer - Lily Raphael (UXID)</p><a href="url"><img class="icon" src="assets/svg/link.svg"></a><a href="url"><img class="icon" src="assets/svg/linkedin.svg"></a></div>
+                        <div class="name-container"><p>Sound Designer - Caroline Kottmeier (FMTV)</p><a href="url"><img class="icon" src="assets/svg/link.svg"></a><a href="url"><img class="icon" src="assets/svg/linkedin.svg"></a></div>
+                    </div>
+                </div>
+                <div class="card" id="space-after">
+                    <h1>Programming Team</h1>
+                    <p>Advised by Gregory Hislop</p>
+                    <div class="members">
+                        <div class="name-container"><p>Programming Lead - Penghu Chen (CS)</p><a href="url"><img class="icon" src="assets/svg/link.svg"></a><a href="url"><img class="icon" src="assets/svg/linkedin.svg"></a></div>
+                        <div class="name-container"><p>UI/UX Developer - Dawei Chi (CS)</p><a href="url"><img class="icon" src="assets/svg/link.svg"></a><a href="url"><img class="icon" src="assets/svg/linkedin.svg"></a></div>
+                        <div class="name-container"><p>UI/UX Developer - Tiffany Ly (CS)</p><a href="url"><img class="icon" src="assets/svg/link.svg"></a><a href="url"><img class="icon" src="assets/svg/linkedin.svg"></a></div>
+                        <div class="name-container"><p>Player/Environment Developer - Cynthia Harris (CS) </p><a href="url"><img class="icon" src="assets/svg/link.svg"></a><a href="url"><img class="icon" src="assets/svg/linkedin.svg"></a></div>
+                        <div class="name-container"><p>Player/Enemy/Environment Developer - Kevin Cheng (CS)</p><a href="url"><img class="icon" src="assets/svg/link.svg"></a><a href="url"><img class="icon" src="assets/svg/linkedin.svg"></a></div>
+                        <div class="name-container"><p>Backend/Sound/Environment Developer - Jarod Mellus (CS)</p><a href="url"><img class="icon" src="assets/svg/link.svg"></a><a href="url"><img class="icon" src="assets/svg/linkedin.svg"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
