@@ -417,7 +417,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 10rem 0;
+    padding: 8rem 0 10rem 0;
 }
 
 .button-container p {
@@ -547,11 +547,11 @@ footer {
 }
 
 #space {
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 
 #space-bottom {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .teamIntro-container {
@@ -637,7 +637,6 @@ footer {
     padding: 2px;
     transition: 0.3s;
     margin: 2rem;
-    border: 2px solid white;
 }
 .gallery:hover .gallery__image {
     filter: grayscale(1);
@@ -680,4 +679,11 @@ footer {
     opacity: 0;
     background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255, 255, 0) 100%);
     transition: 0.3s;
+}
+
+
+.gallery__column-small {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
 }
