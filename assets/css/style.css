@@ -417,7 +417,37 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 8rem 0 10rem 0;
+    margin-top: 8rem;
+}
+
+.section-name p {
+    margin: 2rem; 
+}
+
+.button-container-small {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10rem;
+}
+
+.button-flexbox {
+    width: 30rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button-container-small .button {
+    padding: .5rem 1rem;
+    border-radius: 20rem;
+    border: none;
+    -webkit-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.button-container-small p {
+    color: black;
 }
 
 .button-container p {
@@ -426,7 +456,7 @@ footer {
 }
 
 .button-container .button {
-    padding: 2rem;
+    padding:  1rem 2rem;
     font-size: 30px;
     border-radius: 20rem;
     border: none;
@@ -435,7 +465,8 @@ footer {
     transition: all 0.1s ease-in;
 }
 
-.button-container .button:hover {
+.button-container .button:hover,
+.button-container-small .button:hover {
     cursor: pointer;
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
