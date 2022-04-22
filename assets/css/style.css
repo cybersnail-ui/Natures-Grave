@@ -606,7 +606,7 @@ footer {
 }
 .column-one img, .column-two img {
     max-width: 40vw;
-    min-width: 20rem;
+    min-width: 300px;
     margin-top: 5rem;
     border: 2px white solid;
     border-radius: 1rem;
