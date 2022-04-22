@@ -687,3 +687,7 @@ footer {
     flex-direction: column;
     width: 33%;
 }
+
+#hide {
+    display: none;
+}
