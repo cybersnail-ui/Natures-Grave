@@ -52,6 +52,13 @@
     .video-card {
         max-width: 35rem;
     }
+    .column-one, .column-two {
+        width: unset !important;
+    }
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .small {
@@ -123,8 +130,12 @@ footer {
     background-color: green;
 }
 
+.figma-container {
+    display: flex;
+    justify-content: center;
+}
+
 .video-container {
-    padding: 5rem 0 0 0;
     margin: 0 2rem;
     display: flex;
     justify-content: space-evenly;
@@ -145,7 +156,7 @@ footer {
     background-attachment: fixed;
     background-size: 20rem;
     background-position: top;
-    border-radius: 3rem;
+    border-radius: 1rem;
     border: 2px solid white;
     overflow: hidden;
 }
@@ -340,6 +351,7 @@ footer {
 
 .content img {
     width: 100%;
+    max-width: 98rem;
 }
 
 .large-preview {
@@ -451,6 +463,12 @@ footer {
     border-radius: 3rem;
     border: 2px solid white;
     margin: 5rem 12rem;
+    max-width: 86rem;
+}
+
+.text-box-container {
+    display: flex;
+    justify-content: center;
 }
 
 #space {
@@ -471,4 +489,33 @@ footer {
     height: 10rem;
     width: 10rem;
     margin-right: 1rem;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.content-container img:hover{
+    transform: scale(1.03);
+}
+
+.column-one, .column-two {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.column-one img, .column-two img {
+    max-width: 40vw;
+    min-width: 20rem;
+    margin-top: 5rem;
+    border: 2px white solid;
+    border-radius: 1rem;
+    transition: all 0.1s ease-in;
+}
+
+.section-name {
+    text-align: center;
+
 }
