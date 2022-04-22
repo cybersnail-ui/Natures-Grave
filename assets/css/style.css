@@ -124,7 +124,7 @@ footer {
 }
 
 .video-container {
-    padding: 5rem 0;
+    padding: 5rem 0 0 0;
     margin: 0 2rem;
     display: flex;
     justify-content: space-evenly;
@@ -366,12 +366,25 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20rem;
+    padding: 10rem 0;
 }
 
-.button {
+.button-container p {
+    font-size: calc(30px + .75vw);
+    color: black;
+}
+
+.button-container .button {
     padding: 2rem;
     font-size: 30px;
+    border-radius: 20rem;
+    border: none;
+    transition: all 0.1s ease-in;
+}
+
+.button-container .button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .card {
