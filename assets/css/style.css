@@ -475,6 +475,10 @@ footer {
     margin-top: 5rem;
 }
 
+#space-bottom {
+    margin-bottom: 5rem;
+}
+
 .teamIntro-container {
     display: flex;
     justify-content: flex;
@@ -518,4 +522,13 @@ footer {
 .section-name {
     text-align: center;
 
+}
+
+.row {
+    display: flex;
+
+}
+
+.row img {
+    height: 30vw;
 }
