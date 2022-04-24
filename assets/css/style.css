@@ -480,6 +480,11 @@ footer {
     text-align: center;
 }
 
+#hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
 .title-container .header {
     width: 100%;
     color: white;
