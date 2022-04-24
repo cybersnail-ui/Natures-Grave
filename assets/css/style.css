@@ -71,7 +71,7 @@
     opacity: .7;
     background-image: url("/assets/img/asfalt-light.png");
     -webkit-animation: noiseTextureAnim2 .55s steps(1) infinite;
-    background-size: 150px 150px;
+    background-size: 175px 175px;
     pointer-events: none;
 }
 
@@ -575,7 +575,6 @@ footer {
     font-size: calc(80px + .75vw);
     white-space: nowrap;
     transition: all .2s ease;
-
 }
 
 .title-container .sub-header {
