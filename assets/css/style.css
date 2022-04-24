@@ -69,7 +69,7 @@
     top: 0;
     z-index: 2;
     opacity: .7;
-    background-image: url("/assets/img/asfalt-light.png");
+    background-image: url("https://cybersnail-ui.github.io/Natures-Grave/assets/img/asfalt-light.png");
     -webkit-animation: noiseTextureAnim2 .55s steps(1) infinite;
     background-size: 175px 175px;
     pointer-events: none;
