@@ -18,10 +18,10 @@
         <div class="menu" id="menu">
             <div class="menu-btn-container">
                 <button class="btn-small" id="about-btn" data-tilt data-tilt-reverse="true" data-tilt-max="10" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4">About</button>
-                <button class="btn-small btn-space" id="video-btn" data-tilt data-tilt-reverse="true" data-tilt-max="10" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4">Trailer + Gameplay</button>
+                <button class="btn-small btn-space" id="video-btn" data-tilt data-tilt-reverse="true" data-tilt-max="10" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4">Trailer / Gameplay</button>
                 <button class="btn-small btn-space" id="gallery-btn" data-tilt data-tilt-reverse="true" data-tilt-max="10" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4">Gameplay Gallery</button>
                 <button class="btn-small btn-space" id="character-btn" data-tilt data-tilt-reverse="true" data-tilt-max="10" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4">Characters</button>
-                <button class="btn-small btn-space" id="concept-btn" data-tilt data-tilt-reverse="true" data-tilt-max="10" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4">Concept</button>
+                <button class="btn-small btn-space" id="concept-btn" data-tilt data-tilt-reverse="true" data-tilt-max="10" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4">Concept Artwork</button>
                 <button class="btn-small btn-space" id="download-btn" data-tilt data-tilt-reverse="true" data-tilt-max="10" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4">Downloads</button>
                 <button class="btn-small btn-space" id="team-btn" data-tilt data-tilt-reverse="true" data-tilt-max="10" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4">Team</button>
             </div>
@@ -109,7 +109,7 @@
             </div>
 
             <div class="vid-section" id="video-sec">
-                <h1 id="center-text">Watch our trailer and gameplay</h1>
+                <h1 id="center-text">Watch trailer and gameplay</h1>
                 <div class="vid-container space">
                     <div class="vid-column-1">
                         <video width="100%" controls>
@@ -455,6 +455,7 @@
                 gallery: '#my-gallery',
                 children: 'a',
                 pswpModule: () => import('https://unpkg.com/photoswipe'),
+                wheelToZoom: true
             });
 
             lightbox.init();
