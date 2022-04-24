@@ -236,6 +236,9 @@ html {
     .tb-text-right {
         text-align: left !important;
     }
+    .cover {
+        background-size: 150px 150px !important;
+    }
 }
 @media only screen and (max-width: 900px) {
     .menu-btn {
@@ -301,13 +304,16 @@ html {
         margin-top: 1rem;
     }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
     .vid-container {
         flex-direction: column !important;
     }
     .vid-column-1, .vid-column-2 {
         width: 100% !important;
         margin: 1rem 0 0 0 !important;
+    }
+    .cover {
+        background-size: 125px 125px !important;
     }
 }
 @media only screen and (max-width: 700px) {
@@ -360,6 +366,9 @@ html {
     .tb-column h1 {
         margin-top: 0 !important;
         padding-top: 3rem !important;
+    }
+    .cover {
+        background-size: 100px 100px !important;
     }
 }
 @media only screen and (max-width: 550px) {
