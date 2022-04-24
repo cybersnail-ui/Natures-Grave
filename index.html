@@ -1,4 +1,4 @@
-<html>
+<html id="html">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +7,32 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <link rel="icon" href="assets/img/logo.png">
         <title>Nature's Grave</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Permanent+Marker&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.2.2/photoswipe.css">
     </head>
     <body>
+
+        <!-- <div class="cover"></div> -->
+        <div class="menu" id="menu">
+            <div class="menu-btn-container">
+                <button class="btn-small" id="about-btn" data-tilt data-tilt-reverse="true" data-tilt-max="10" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4">About</button>
+                <button class="btn-small btn-space" id="video-btn" data-tilt data-tilt-reverse="true" data-tilt-max="10" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4">Trailer + Gameplay</button>
+                <button class="btn-small btn-space" id="gallery-btn" data-tilt data-tilt-reverse="true" data-tilt-max="10" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4">Gameplay Gallery</button>
+                <button class="btn-small btn-space" id="character-btn" data-tilt data-tilt-reverse="true" data-tilt-max="10" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4">Characters</button>
+                <button class="btn-small btn-space" id="concept-btn" data-tilt data-tilt-reverse="true" data-tilt-max="10" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4">Concept</button>
+                <button class="btn-small btn-space" id="download-btn" data-tilt data-tilt-reverse="true" data-tilt-max="10" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4">Downloads</button>
+                <button class="btn-small btn-space" id="team-btn" data-tilt data-tilt-reverse="true" data-tilt-max="10" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4">Team</button>
+            </div>
+        </div>
+        <button id="menu-btn" class="menu-btn" data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4">
+            <div class="menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </button>
 
         <section class="scene-one">
             <div class="fixed-section">
@@ -18,352 +42,400 @@
                 <div class="gradient"></div>
 
                 <div class="title-container">
-                    <img class="header"src="assets/img/header.png">
-                    <img class="sub-header" style="opacity: 0;"src="assets/img/sub-header.png">
+                    <div data-tilt data-tilt-full-page-listening data-tilt-reverse="true" data-tilt-reset="false">
+                        <h1 class="header">Nature's Grave</h1>
+                        <p class="sub-header" style="opacity: 0;">A top-down 2D action game by the Graveyard Shift</p>
+                    </div>
+                    <!-- <img class="header"src="assets/img/header.png">
+                    <img class="sub-header" style="opacity: 0;"src="assets/img/sub-header.png"> -->
                 </div>
 
             </div>
         </section>
 
-        <div class="text-box-container">
-            <div class="text-box">
-                <p>Nature’s Grave is a top down 2D action game that integrates various combat mechanics. Inspired by other entries in the genre, players can use a combination of grapples and dashes to provide a unique experience creating that tense moment to moment action. This intensity is also reflected in the art style that distinguishes itself by having painterly, textured sprites and environments.</p>
-            </div>
-        </div>
-
-        <div class="figma-container">
-            <div class="content large">
-                <img src="assets/img/content-large.png">
-            </div>
-    
-            <div class="content small">
-                <img src="assets/img/content-small.png">
-            </div>
-        </div>
-
-        <!-- <div class="large-preview">
-            <img src="assets/img/content-footer.png">
-        </div> -->
-
-        <div class="section-name" id="space-bottom">
-            <h1>Videos</h1>
-        </div>
-
-        <div class="video-container">
-            <div class="video-card">
-                <video width="100%" controls>
-                    <source src="assets/video/trailer.mp4" type="video/mp4">
-                    <!-- <source src="movie.ogg" type="video/ogg"> -->
-                    Your browser does not support the video tag.
-                </video>
-                <p>Watch our trailer!</p>
-            </div>
-            <div class="video-card" id="space-after">
-                <video width="100%" controls>
-                    <source src="assets/video/demo.mp4" type="video/mp4">
-                    <!-- <source src="movie.ogg" type="video/ogg"> -->
-                    Your browser does not support the video tag.
-                </video>
-                <p>View our gameplay!</p>
-            </div>
-        </div>
         
-        <div class="section-name" id="space">
-            <h1>Gameplay Gallery</h1>
-        </div>
 
-        <div class="gallery">
-            <div class="gallery__column">
-                <a href="assets/art/game11.png" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="assets/art/game11.png" alt="View Full Image" class="gallery__image">
-                        <figcaption class="gallery__caption"><p>View Full Image</p></figcaption>
-                    </figure>
-                </a>
-        
-                <a href="assets/art/game12.png" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="assets/art/game12.png" alt="View Full Image" class="gallery__image">
-                        <figcaption class="gallery__caption"><p>View Full Image</p></figcaption>
-                    </figure>
-                </a>
-                <a href="assets/art/game3.png" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="assets/art/game3.png" alt="View Full Image" class="gallery__image">
-                        <figcaption class="gallery__caption"><p>View Full Image</p></figcaption>
-                    </figure>
-                </a>
-            </div>
-            
-            <div class="gallery__column">
-                <a href="assets/art/game13.png" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="assets/art/game13.png" alt="View Full Image" class="gallery__image">
-                        <figcaption class="gallery__caption"><p>View Full Image</p></figcaption>
-                    </figure>
-                </a>
-                <a href="assets/art/game14.png" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="assets/art/game14.png" alt="View Full Image" class="gallery__image">
-                        <figcaption class="gallery__caption"><p>View Full Image</p></figcaption>
-                    </figure>
-                </a>
-            </div>
-        </div>
+        <div class="page-container">
 
-        <div class="section-name" id="space">
-            <h1>Sprites</h1>
-        </div>
-
-        <div class="gallery">
-            <div class="gallery__column-small">
-                <a href="assets/art/play1.png" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="assets/art/play1.png" alt="View Full Image" class="gallery__image">
-                        <figcaption class="gallery__caption"><p>View Full Image</p></figcaption>
-                    </figure>
-                </a>
-                <a href="assets/art/monster1.png" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="assets/art/monster1.png" alt="View Full Image" class="gallery__image">
-                        <figcaption class="gallery__caption"><p>View Full Image</p></figcaption>
-                    </figure>
-                </a>
+            <div class="tb-section" id="about-sec">
+                <div class="text-box">
+                    <h1 id="center-text">About</h1>
+                    <p class="space">Nature's Grave is a 2D top-down action game focused on intense combat interactions and evocative environments. You navigate the world as a nature spirit with the goal of defeating the blighted monsters that have poisoned the world. Fight your way through the corruption and bring life back to a dead land!</p>
             </div>
-            
-            <div class="gallery__column-small">
-                <a href="assets/art/monster3.png" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="assets/art/monster3.png" alt="View Full Image" class="gallery__image">
-                        <figcaption class="gallery__caption"><p>View Full Image</p></figcaption>
-                    </figure>
-                </a>
-                <a href="assets/art/monster4.png" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="assets/art/monster4.png" alt="View Full Image" class="gallery__image">
-                        <figcaption class="gallery__caption"><p>View Full Image</p></figcaption>
-                    </figure>
-                </a>
             </div>
 
-            <div class="gallery__column-small">
-                <a href="assets/art/monster2.png" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="assets/art/monster2.png" alt="View Full Image" class="gallery__image">
-                        <figcaption class="gallery__caption"><p>View Full Image</p></figcaption>
-                    </figure>
-                </a>
+            <div class="tb-section tb-margin">
+                <div class="tb">
+                    <div class="tb-column tb-left" >
+                        <h1>Restore a corrupt world</h1>
+                        <p class="space">In a world corrupted by malice, you the player, control a nature spirit in pursuit of restoring life to the lands by defeating blighted enemies.</p>
+                    </div>
+                    <img class="tb-img w-border right-abs" src="assets/img/dead-alive.png" data-tilt data-tilt-full-page-listening data-tilt-reverse="true" data-tilt-reset="false" data-tilt data-tilt-max="5" data-tilt-speed="5000">
+                    <!-- <img class="tb-img" src="assets/img/dead.png"> -->
+                </div>
             </div>
-        </div>
 
-
-        <div class="section-name" id="space">
-            <h1>Concept Artwork</h1>
-        </div>
-
-        <!-- <div class="text-box">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod corrupti dolor quisquam similique dolore error veniam repudiandae, placeat itaque alias incidunt perspiciatis tempora quam soluta vero possimus quas aspernatur temporibus!</p>
-        </div> -->
-
-        <div class="gallery">
-            <div class="gallery__column">
-                <a href="assets/art/concept1.png" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="assets/art/concept1.png" alt="View Full Image" class="gallery__image">
-                        <figcaption class="gallery__caption"><p>View Full Image</p></figcaption>
-                    </figure>
-                </a>
-        
-                <a href="assets/art/concept2.png" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="assets/art/concept2.png" alt="View Full Image" class="gallery__image">
-                        <figcaption class="gallery__caption"><p>View Full Image</p></figcaption>
-                    </figure>
-                </a>
-        
-                <a href="assets/art/concept3.png" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="assets/art/concept3.png" alt="View Full Image" class="gallery__image">
-                        <figcaption class="gallery__caption"><p>View Full Image</p></figcaption>
-                    </figure>
-                </a>
+            <div class="tb-section tb-margin">
+                <div class="tb tb-align-right">
+                    <img class="tb-img left-abs" src="assets/img/monsters.png" data-tilt data-tilt-full-page-listening data-tilt-reverse="true" data-tilt-reset="false" data-tilt data-tilt-max="5" data-tilt-speed="5000">
+                    <div class="tb-column tb-text-right">
+                        <h1>Face challenging monstrocities</h1>
+                        <p class="space">Each blighted foe poses a unique challenge. Learn, adapt and master their playstyles on your journey. </p>
+                    </div>
+                    <!-- <img class="tb-img" src="assets/img/dead.png" data-tilt data-tilt-full-page-listening data-tilt-reverse="true" data-tilt-reset="false"> -->
+                </div>
             </div>
-            
-            <div class="gallery__column">
-                <a href="assets/art/concept4.png" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="assets/art/concept4.png" alt="View Full Image" class="gallery__image">
-                        <figcaption class="gallery__caption"><p>View Full Image</p></figcaption>
-                    </figure>
-                </a>
-                
-                <a href="assets/art/concept5.png" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="assets/art/concept5.png" alt="View Full Image" class="gallery__image">
-                        <figcaption class="gallery__caption"><p>View Full Image</p></figcaption>
-                    </figure>
-                </a>
-        
-                <a href="assets/art/concept6.png" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="assets/art/concept6.png" alt="View Full Image" class="gallery__image">
-                        <figcaption class="gallery__caption"><p>View Full Image</p></figcaption>
-                    </figure>
-                </a>
+
+            <div class="tb-section tb-margin">
+                <div class="tb">
+                    <div class="tb-column" >
+                        <h1>High speed combat</h1>
+                        <p class="space">Dodge attacks with your dash and use your grapple hook to escape or engage enemies.</p>
+                    </div>
+                    <!-- <img class="tb-img" src="assets/img/dead.png" data-tilt data-tilt-full-page-listening data-tilt-reverse="true" data-tilt-reset="false"> -->
+                    <img class="tb-img w-border right-abs" src="assets/img/dead-alive.png" data-tilt data-tilt-full-page-listening data-tilt-reverse="true" data-tilt data-tilt-max="5" data-tilt-speed="5000">
+                </div>
             </div>
-        </div>
 
-        <div class="button-container">
-            <button type="button" class="button" onclick="window.open('https://hab79.itch.io/natures-grave');"><p>Play Nature's Grave</p></button>
-        </div>
-
-        <div class="button-container-small">
-            <button type="button" class="button" onclick="window.open('https://drexel.qualtrics.com/jfe/form/SV_cITeq8uGbN1QnrM');"><p>Provide Playtest Feedback</p></button>
-        </div>
-
-        <div class="section-name">
-            <p>Other Links</p>
-        </div>
-
-        <div class="button-container-small" id="space-below">
-            <div class="button-flexbox">
-                <button type="button" class="button" onclick="window.open('https://drexel0-my.sharepoint.com/:f:/g/personal/sh3385_drexel_edu/EhB59YsoOfJOo5bTDPHnogMB_mR9fPkzf9zo-nnOgiNvCA?e=91E2uT');"><p>Full Logo Image</p></button>
-                <button type="button" class="button" onclick="window.open('https://drexel0-my.sharepoint.com/:u:/g/personal/sh3385_drexel_edu/EQJH8F-AvZpDvEN52Gxo3AUBvrpokRVJZDCl-ppZsgdyRQ?e=69EHnQ');"><p>All Sprites</p></button>
-                <button type="button" class="button" onclick="window.open('https://drexel0-my.sharepoint.com/:f:/g/personal/sh3385_drexel_edu/EtaQxFCWGnJFui_kLqRER48BMaSzxxzoOmogXweYkN-9pA?e=vJ7fIQ');"><p>All Concept Art</p></button>
+            <div class="tb-section tb-margin">
+                <div class="tb tb-align-right">
+                    <img class="tb-img left-abs" src="assets/img/monsters.png" data-tilt data-tilt-full-page-listening data-tilt-reverse="true" data-tilt data-tilt-max="5" data-tilt-speed="5000">
+                    <div class="tb-column tb-text-right">
+                        <h1>Find yourself in a lost world</h1>
+                        <p class="space">Explore the lands and gather cryptic messages of the events that took place.</p>
+                    </div>
+                    <!-- <img class="tb-img" src="assets/img/dead.png" data-tilt data-tilt-full-page-listening data-tilt-reverse="true" data-tilt-reset="false"> -->
+                </div>
             </div>
+
+            <div class="vid-section" id="video-sec">
+                <h1 id="center-text">Watch our trailer and gameplay</h1>
+                <div class="vid-container space">
+                    <div class="vid-column-1">
+                        <video width="100%" controls>
+                            <source src="assets/video/trailer.mp4" type="video/mp4">
+                            <!-- <source src="movie.ogg" type="video/ogg"> -->
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="vid-column-2">
+                        <video width="100%" controls>
+                            <source src="assets/video/demo.mp4" type="video/mp4">
+                            <!-- <source src="movie.ogg" type="video/ogg"> -->
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ph-section" id="gallery-sec">
+                <h1 id="center-text">Gameplay Gallery</h1>
+                <div class="ph-container ph-art space" id="my-gallery">                        
+                    <a
+                        href="assets/art/game11.png"
+                        data-pswp-width="1920"
+                        data-pswp-height="1080"
+                        target="_blank"
+                    >
+                    <img data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1"
+                        src="assets/art/game11.png"
+                        alt=""
+                    />
+                    </a>
+                    <a data-tilt data-tilt-reverse="true"
+                        href="assets/art/game12.png"
+                        data-pswp-width="1920"
+                        data-pswp-height="1080"
+                        target="_blank"
+                    >
+                    <img data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1"
+                        src="assets/art/game12.png"
+                        alt=""
+                    />
+                    </a>
+                    <a
+                        href="assets/art/game13.png"
+                        data-pswp-width="1920"
+                        data-pswp-height="1080"
+                        target="_blank"
+                    >
+                    <img data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1"
+                        src="assets/art/game13.png"
+                        alt=""
+                    />
+                    </a>
+                </div>
+            </div>
+
+            <div class="ph-section" id="character-sec">
+                <h1 id="center-text">Characters</h1>
+                <div class="ph-container ph-sprite space" id="my-gallery">                        
+                    <a
+                        href="assets/art/play1.png"
+                        data-pswp-width="890"
+                        data-pswp-height="890"
+                        target="_blank"
+                    >
+                    <img data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1"
+                        src="assets/art/play1.png"
+                        alt=""
+                    />
+                    </a>
+                    <a
+                        href="assets/art/monster1.png"
+                        data-pswp-width="890"
+                        data-pswp-height="890"
+                        target="_blank"
+                    >
+                    <img data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1"
+                        src="assets/art/monster1.png"
+                        alt=""
+                    />
+                    </a>
+                    <a
+                        href="assets/art/monster2.png"
+                        data-pswp-width="868"
+                        data-pswp-height="890"
+                        target="_blank"
+                    >
+                    <img data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1" 
+                        src="assets/art/monster2.png"
+                        alt=""
+                    />
+                    </a>
+                    <a
+                        href="assets/art/monster3.png"
+                        data-pswp-width="890"
+                        data-pswp-height="890"
+                        target="_blank"
+                    >
+                    <img data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1"
+                        src="assets/art/monster3.png"
+                        alt=""
+                    />
+                    </a>
+                    <a
+                        href="assets/art/monster4.png"
+                        data-pswp-width="1839"
+                        data-pswp-height="889"
+                        target="_blank"
+                    >
+                    <img data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1"
+                        src="assets/art/monster4.png"
+                        alt=""
+                    />
+                    </a>
+                </div>
+            </div>
+
+            <div class="ph-section" id="concept-sec">
+                <h1 id="center-text">Concept Artwork</h1>
+                <div class="ph-container ph-art space" id="my-gallery">                        
+                    <a
+                        href="assets/art/concept1.png"
+                        data-pswp-width="1920"
+                        data-pswp-height="1080"
+                        target="_blank"
+                    >
+                    <img data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1"
+                        src="assets/art/concept1.png"
+                        alt=""
+                    />
+                    </a>
+                    <a
+                        href="assets/art/concept2.png"
+                        data-pswp-width="1920"
+                        data-pswp-height="1080"
+                        target="_blank"
+                    >
+                    <img data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1"
+                        src="assets/art/concept2.png"
+                        alt=""
+                    />
+                    </a>
+                    <a
+                        href="assets/art/concept3.png"
+                        data-pswp-width="1920"
+                        data-pswp-height="1080"
+                        target="_blank"
+                    >
+                    <img data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1"
+                        src="assets/art/concept3.png"
+                        alt=""
+                    />
+                    </a>
+                    <a
+                    href="assets/art/concept3.png"
+                    data-pswp-width="1920"
+                    data-pswp-height="1080"
+                    target="_blank"
+                    >
+                    <img data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1"
+                        src="assets/art/concept3.png"
+                        alt=""
+                    />
+                    </a>
+                    <a
+                        href="assets/art/concept4.png"
+                        data-pswp-width="1920"
+                        data-pswp-height="1080"
+                        target="_blank"
+                    >
+                    <img data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1"
+                        src="assets/art/concept4.png"
+                        alt=""
+                    />
+                    </a>
+                    <a
+                        href="assets/art/concept5.png"
+                        data-pswp-width="1920"
+                        data-pswp-height="1080"
+                        target="_blank"
+                    >
+                    <img data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1"
+                        src="assets/art/concept5.png"
+                        alt=""
+                    />
+                    </a>
+                    <a
+                        href="assets/art/concept6.png"
+                        data-pswp-width="1920"
+                        data-pswp-height="1080"
+                        target="_blank"
+                    >
+                    <img data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1"
+                        src="assets/art/concept6.png"
+                        alt=""
+                    />
+                    </a>
+                    <a
+                        href="assets/art/concept7.png"
+                        data-pswp-width="1920"
+                        data-pswp-height="1080"
+                        target="_blank"
+                    >
+                    <img data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1"
+                        src="assets/art/concept7.png"
+                        alt=""
+                    />
+                    </a>
+                    <a
+                        href="assets/art/concept8.png"
+                        data-pswp-width="1920"
+                        data-pswp-height="1080"
+                        target="_blank"
+                    >
+                    <img data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1"
+                        src="assets/art/concept8.png"
+                        alt=""
+                    />
+                    </a>
+                </div>
+            </div>
+
+            <div class="btn-section" id="download-sec">
+                <h1>Downloads</h1>
+                    <button data-tilt data-tilt-max="5" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.8" type="button" class="btn-large" onclick="window.open('https://hab79.itch.io/natures-grave');"><p>Play Nature's Grave</p></button>
+                <div class="btn-container-small">
+                    <button data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4" type="button" class="btn-small btn-small-space" onclick="window.open('https://drexel.qualtrics.com/jfe/form/SV_cITeq8uGbN1QnrM');"><p>Playtest Survey</p></button>
+                    <button data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4" type="button" class="btn-small btn-small-space" onclick="window.open('assets/files/Logos.zip');"><p>Download Logo<br>(.zip, 226 kb)</p></button>
+                    <button data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4" type="button" class="btn-small btn-small-space" onclick="window.open('assets/files/Sprites.zip');"><p>Download Sprites<br>(.zip, 20.1 mb)</p></button>
+                    <button data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.4" type="button" class="btn-small btn-small-space" onclick="window.open('https://drive.google.com/file/d/1SdPQQHNVAjdoMkl0lOLCF1MguNdNUKjG/view?usp=sharing');"><p>Download Concept Art<br>(.zip, 204mb)</p></button>
+                </div>
+            </div>
+
+
         </div>
 
-
-        <div class="footer">
-            <div class="teamIntro-container">
-                <img src="assets/img/ng-logo-white.png">
+        <div class=ftr-section id="team-sec">
+            <div class="ftr-column ftr-team">
+                <img class="ftr-team-icon" src="assets/img/ng-logo-white.png" data-tilt-reset="false" data-tilt data-tilt-full-page-listening data-tilt-reverse="true" data-tilt-max="15" data-tilt-glare data-tilt-max-glare="0.8">
                 <div class="description">
                     <h1>Hello, we are the Graveyard Shift!</h1>
                     <p>We are a group of game developers from Drexel University. We formed a team in September 2021 and since then have been working on Nature's Grave.</p>
                 </div>
             </div>
+            <div class="ftr-divider"></div>
+            <div class="ftr-team-section">
+            <div class="ftr-column ftr-break">
+                <h1>Design Team</h1>
+                <p class="ftr-prof">Advised by Rob Lloyd, Dan Rose, and Tony Rowe</p>
+                <div class="name-container">
+                    <p>Producer</p><p class="nm-divider"></p><p>Sana Hadavi (GDAP)</p>
+                    <a target="_blank" href="https://sanahadavi.wixsite.com/portfolio"><img class="icon" src="assets/svg/link.svg"></a>
+                    <a href="https://www.linkedin.com/in/sana-hadavi/"><img class="icon" src="assets/svg/linkedin.svg"></a>
+                </div>
+                <div class="name-container">
+                    <p>Player Animator & Level Designer</p><p class="nm-divider"></p><p>Hannah Bergman (GDAP)</p>
+                    <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/link.svg"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/hannahbergman3/"><img class="icon" src="assets/svg/linkedin.svg"></a>
+                </div>
+                <div class="name-container">
+                    <p>Concept/Environment Art, Enemy/Level Design</p><p class="nm-divider"></p><p>Chris Epure (GDAP)</p>
+                    <a target="_blank" href="https://www.christopherepure.com/home"><img class="icon" src="assets/svg/link.svg"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/chrisepure/"><img class="icon" src="assets/svg/linkedin.svg"></a>
+                </div>
+                <div class="name-container">
+                    <p>Enemy Design and Animator</p><p class="nm-divider"></p><p>Liam Shea (GDAP)</p>
+                    <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/link.svg"></a>
+                    <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/linkedin.svg"></a>
+                </div>
+                <div class="name-container">
+                    <p>UI/UX Designer</p><p class="nm-divider"></p><p>Britney Tu (UXID)</p>
+                    <a target="_blank" href="https://btudesign.com/"><img class="icon" src="assets/svg/link.svg"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/brit2"><img class="icon" src="assets/svg/linkedin.svg"></a>
+                </div>
+                <div class="name-container">
+                    <p>UI/UX Designer</p><p class="nm-divider"></p><p>Lily Raphael (UXID)</p>
+                    <a target="_blank" href="https://cybersnail.space/"><img class="icon" src="assets/svg/link.svg"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/lillian-raphael-b1677b183/"><img class="icon" src="assets/svg/linkedin.svg"></a>
+                </div>
+                <div class="name-container">
+                    <p>Sound Designer</p><p class="nm-divider"></p><p>Caroline Kottmeier (FMTV)</p>
+                    <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/link.svg"></a>
+                    <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/linkedin.svg"></a>
+                </div>
+            </div>
+            <div class="ftr-divider-team"></div>
+            <div class="ftr-column ftr-break">
+                <h1>Programming Team</h1>
+                <p class="ftr-prof">Advised by Gregory Hislop</p>
+                <div class="name-container">
+                    <p>Programming Lead</p><p class="nm-divider"></p><p>Penghu Chen (CS)</p>
+                    <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/link.svg"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/penghu-chen/"><img class="icon" src="assets/svg/linkedin.svg"></a>
+                </div>
+                <div class="name-container">
+                    <p>UI/UX Developer</p><p class="nm-divider"></p><p>Dawei Chi (CS)</p>
+                    <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/link.svg"></a>
+                    <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/linkedin.svg"></a>
+                </div>
+                <div class="name-container">
+                    <p>UI/UX Developer</p><p class="nm-divider"></p><p>Tiffany Ly (CS)</p>
+                    <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/link.svg"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/tiffany-ly7/"><img class="icon" src="assets/svg/linkedin.svg"></a>
+                </div>
+                <div class="name-container">
+                    <p>Player/Environment Developer</p><p class="nm-divider"></p><p>Cynthia Harris (CS) </p>
+                    <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/link.svg"></a>
+                    <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/linkedin.svg"></a>
+                </div>
+                <div class="name-container">
+                    <p>Player/Enemy/Environment Developer</p><p class="nm-divider"></p><p>Kevin Cheng (CS)</p>
+                    <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/link.svg"></a>
+                    <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/linkedin.svg"></a>
+                </div>
+                <div class="name-container">
+                    <p>Backend/Sound/Environment Developer</p><p class="nm-divider"></p><p>Jarod Mellus (CS)</p>
+                    <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/link.svg"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/jarod-mellus-120053167"><img class="icon" src="assets/svg/linkedin.svg"></a>
+                </div>
 
-            <div class="card-container" id="space">
-                <div class="card">
-                    <h1>Art & Sound Team</h1>
-                    <p>Advised by Rob Lloyd, Dan Rose, and Tony Rowe</p>
-                    <div class="members">
-                        <div class="name-container">
-                            <p>Producer - Sana Hadavi (GDAP)</p>
-                            <a target="_blank" href="https://sanahadavi.wixsite.com/portfolio"><img class="icon" src="assets/svg/link.svg"></a>
-                            <a href="https://www.linkedin.com/in/sana-hadavi/"><img class="icon" src="assets/svg/linkedin.svg"></a>
-                        </div>
-                        <div class="name-container">
-                            <p>Player Animator & Level Designer - Hannah Bergman (GDAP)</p>
-                            <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/link.svg"></a>
-                            <a target="_blank" href="https://www.linkedin.com/in/hannahbergman3/"><img class="icon" src="assets/svg/linkedin.svg"></a>
-                        </div>
-                        <div class="name-container">
-                            <p>Concept and Environment Art, Enemy/Level Design - Chris Epure (GDAP)</p>
-                            <a target="_blank" href="https://www.christopherepure.com/home"><img class="icon" src="assets/svg/link.svg"></a>
-                            <a target="_blank" href="https://www.linkedin.com/in/chrisepure/"><img class="icon" src="assets/svg/linkedin.svg"></a>
-                        </div>
-                        <div class="name-container">
-                            <p>Enemy Design and Animator - Liam Shea (GDAP)</p>
-                            <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/link.svg"></a>
-                            <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/linkedin.svg"></a>
-                        </div>
-                        <div class="name-container">
-                            <p>UI/UX Designer - Britney Tu (UXID)</p>
-                            <a target="_blank" href="https://btudesign.com/"><img class="icon" src="assets/svg/link.svg"></a>
-                            <a target="_blank" href="https://www.linkedin.com/in/brit2"><img class="icon" src="assets/svg/linkedin.svg"></a>
-                        </div>
-                        <div class="name-container">
-                            <p>UI/UX Designer - Lily Raphael (UXID)</p>
-                            <a target="_blank" href="https://cybersnail.space/"><img class="icon" src="assets/svg/link.svg"></a>
-                            <a target="_blank" href="https://www.linkedin.com/in/lillian-raphael-b1677b183/"><img class="icon" src="assets/svg/linkedin.svg"></a>
-                        </div>
-                        <div class="name-container">
-                            <p>Sound Designer - Caroline Kottmeier (FMTV)</p>
-                            <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/link.svg"></a>
-                            <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/linkedin.svg"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="space-after">
-                    <h1>Programming Team</h1>
-                    <p>Advised by Gregory Hislop</p>
-                    <div class="members">
-                        <div class="name-container">
-                            <p>Programming Lead - Penghu Chen (CS)</p>
-                            <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/link.svg"></a>
-                            <a target="_blank" href="https://www.linkedin.com/in/penghu-chen/"><img class="icon" src="assets/svg/linkedin.svg"></a>
-                        </div>
-                        <div class="name-container">
-                            <p>UI/UX Developer - Dawei Chi (CS)</p>
-                            <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/link.svg"></a>
-                            <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/linkedin.svg"></a>
-                        </div>
-                        <div class="name-container">
-                            <p>UI/UX Developer - Tiffany Ly (CS)</p>
-                            <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/link.svg"></a>
-                            <a target="_blank" href="https://www.linkedin.com/in/tiffany-ly7/"><img class="icon" src="assets/svg/linkedin.svg"></a>
-                        </div>
-                        <div class="name-container">
-                            <p>Player/Environment Developer - Cynthia Harris (CS) </p>
-                            <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/link.svg"></a>
-                            <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/linkedin.svg"></a>
-                        </div>
-                        <div class="name-container">
-                            <p>Player/Enemy/Environment Developer - Kevin Cheng (CS)</p>
-                            <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/link.svg"></a>
-                            <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/linkedin.svg"></a>
-                        </div>
-                        <div class="name-container">
-                            <p>Backend/Sound/Environment Developer - Jarod Mellus (CS)</p>
-                            <a id="hide" target="_blank" href="url"><img class="icon" src="assets/svg/link.svg"></a>
-                            <a target="_blank" href="https://www.linkedin.com/in/jarod-mellus-120053167"><img class="icon" src="assets/svg/linkedin.svg"></a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-
-        <!--
-        <section class="scene-two">
-            <div class="section-one">
-                <img class="monster" src="assets/img/monster.jpg">
-            </div class="section-two">
-            <div class="section-two">
-                <h2>ABOUT THIS GAME</h2>
-                <div class="divider"></div>
-                <p>Nature’s Grave is a top down 2D action game that takes its mold from the combat simplicity and layouts of Hyper Light Drifter, while integrating various combat mechanics from actions games like grappling and dashing to help define its identity as a tense moment to moment action game. This intensity is also reflected in the art style that distinguishes itself by having painterly, textured sprites and environments that give the game a new feel from the usual pixel art top-down game. </p>
-            </div>
-        </section>
-
-        <section class="scene-three">
-            <h2>THE TEAM</h2>
-            <div class="divider"></div>
-            <div class="section-one">
-                <div class="one">
-                    <h3>GDAP</h3>
-                    <p>Sana Hadavi</p>
-                    <p>Hannah Bergman</p>
-                    <p>Christopher Epure</p>
-                    <p>Liam Shea</p>
-                </div>
-                <div class="two">
-                    <h3>UXID</h3>
-                    <p>Lillian Raphael</p>
-                    <p>Britney Tu</p>
-                    <h3 class="margin-top">SFX</h3>
-                    <p>Caroline</p>
-                </div>
-                <div class="three">
-                    <h3>CCI</h3>
-                    <p>Peng Chen</p>
-                    <p>Dawei Chen</p>
-                    <p>Jarod Mellus</p>
-                    <p>Tiffany Ly</p>
-                    <p>Cyn Harris</p>
-                </div>
-            </div>
-        </section> -->
+        </div>
+        
+        </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -372,6 +444,21 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/js/scroll.js"></script>
         <script src="assets/js/app.js"></script>
+        <script type="text/javascript" src="/assets/js/vanilla-tilt.min.js"></script>
+        <script type="module">
+            import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
+
+            const lightbox = new PhotoSwipeLightbox({
+                gallery: '#my-gallery',
+                children: 'a',
+                pswpModule: () => import('https://unpkg.com/photoswipe'),
+            });
+
+            lightbox.init();
+
+        </script>
     </body>
 </html>
