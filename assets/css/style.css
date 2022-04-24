@@ -138,7 +138,11 @@ html {
 
 @media only screen and (max-width: 1700px) {
     .btn-section .btn-small {
-        width: 12rem !important;
+        width: 13rem !important;
+    }
+    .btn-container-small {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 }
 @media only screen and (max-width: 1600px) {
@@ -160,6 +164,11 @@ html {
     }
     .ftr-divider-team {
         margin: 0 1rem 1rem 1rem !important;
+    }
+}
+@media only screen and (max-width: 1520px) {
+    .btn-section .btn-small {
+        width: 12.5rem !important;
     }
 }
 @media only screen and (max-width: 1450px) {
@@ -189,10 +198,14 @@ html {
     .tb-text-right {
         text-align: right;
     }
+    .btn-container-small {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 }
 @media only screen and (max-width: 1100px) {
     .btn-section .btn-small {
-        width: 10rem !important;
+        width: 11.5rem !important;
     }
 }
 @media only screen and (max-width: 1050px) {
@@ -214,10 +227,25 @@ html {
     .ph-art {
         column-count: 1 !important;
     }
+    .btn-section .btn-small {
+        width: 11rem !important;
+    }
 }
+@media only screen and (max-width: 1000px) {
+    .btn-container-small {
+        flex-direction: column !important;
+        align-items: center !important;
+        margin-top: 2rem !important;
+    }
+    .btn-container-small button {
+        margin-top: 1rem !important;
+    }
+}
+
+
 @media only screen and (max-width: 950px) {
     .btn-section .btn-small {
-        width: 8rem !important;
+        width: 10.5rem !important;
     }
     .tb-img {
         width: 80% !important;
@@ -261,11 +289,6 @@ html {
     }
 }
 @media only screen and (max-width: 850px) {
-    .btn-container-small {
-        flex-direction: column !important;
-        align-items: center !important;
-        margin-top: 2rem !important;
-    }
     .btn-section .btn-small {
         width: 20rem !important;
     }
@@ -273,7 +296,7 @@ html {
         margin-top: 1rem;
     }
     .btn-section .btn-small {
-        width: 8rem !important;
+        width: 12rem !important;
     }
     .tb-img {
         width: 80% !important;
@@ -917,9 +940,11 @@ footer {
 .btn-container-small {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 3rem;
     margin-bottom: 1rem;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .btn-container-small p {
@@ -1085,4 +1110,8 @@ footer {
 
 .btn-space {
     margin-top: 2rem;
+}
+
+.btn-bottom-row, .btn-bottom-row .btn-small {
+    margin: 0 !important;
 }
