@@ -145,6 +145,10 @@ html {
     .ftr-section {
         flex-direction: column !important;
     }
+    .ftr-team {
+        max-width: 50% !important;
+        align-self: center !important;
+    }
     .ftr-divider {
         width: 100% !important;
         margin: 0 !important;
@@ -240,9 +244,17 @@ html {
     }
     .ftr-team-section {
         flex-direction: column !important;
+        margin-top: 2rem;
     }
     .ftr-break {
         width: 100% !important;
+    }
+    .ftr-team {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    .ftr-divider {
+        display: none !important;
     }
 }
 @media only screen and (max-width: 850px) {
@@ -1030,6 +1042,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+}
+
+.ftr-team div {
+    width: 100%;
 }
 
 .ftr-team-icon {
