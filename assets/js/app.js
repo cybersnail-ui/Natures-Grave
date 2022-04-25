@@ -3,6 +3,11 @@ const controller = new ScrollMagic.Controller();
 const scene1 = new TimelineLite();
 
 scene1.add(
+    TweenLite.to(".scroll-down", 1,  {
+        css:{ opacity: 0 },
+    }),
+)
+.add(
     TweenLite.to(".alive", 1,  {
         css:{ opacity: 0 },
     })
@@ -15,7 +20,7 @@ scene1.add(
 
 const scene2 = new ScrollMagic.Scene({
     triggerElement: '.scene-one',
-    duration: 500,
+    duration: 750,
     triggerHook: 0,
 })
 .setTween(scene1)

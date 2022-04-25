@@ -526,11 +526,42 @@ footer {
     background-color: green;
 }
 
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+
+.scroll-down {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 2rem;
+    z-index: 1;
+    opacity: 1;
+    animation: blinker 2s ease-in-out infinite;
+}
+
+.scroll-down img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.scroll-down p {
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    font-size: calc(10px) !important;
+}
+
 
 .scene-one {
     width: 100vw !important;
     height: 100% !important;
-    background-color: lightblue;
+    background-color: black;
 }
 
 .scene-one .fixed-section {
@@ -978,7 +1009,7 @@ footer {
     position: fixed;
     width: 100vw;
     height: 100%;
-    z-index: 1;
+    z-index: 999;
     background-color: rgb(0, 0, 0, 1);
 }
 
@@ -992,7 +1023,7 @@ footer {
 }
 
 .menu-btn {
-    z-index: 5;
+    z-index: 999;
     position: fixed;
     top: 2rem;
     left: 2rem;
