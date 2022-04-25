@@ -1,6 +1,18 @@
 $( document ).ready(function() {
     console.log( "ready!" );
 
+
+    var tiltElements = document.querySelectorAll("[data-tilt]");
+    //console.log(tiltElements); DEBUG
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        console.log('is mobile')
+        for (var i = 0, len = tiltElements.length; i < len; i++) {
+            tiltElements[i].vanillaTilt.destroy();
+        }
+    } else {
+        console.log('isnt mobile')
+    }
+
     $('#menu-btn').click(function() {
         $("#menu").fadeToggle(250);
         $('html').toggleClass("scroll-overflow");
