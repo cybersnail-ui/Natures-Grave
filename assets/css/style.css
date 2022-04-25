@@ -444,6 +444,9 @@ html {
         margin-top: 0 !important;
         padding-top: 5rem !important;
     }
+    .nm-divider {
+        margin: 0 .5rem !important;
+    }
 
 }
 
