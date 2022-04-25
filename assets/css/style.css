@@ -1149,3 +1149,17 @@ footer {
 .btn-bottom-row, .btn-bottom-row .btn-small {
     margin: 0 !important;
 }
+    
+#about-sec, #about-1, #about-2, #about-3, #about-4,
+#video-sec, #gallery-sec, #character-sec, #concept-sec, #download-sec  {
+    opacity: 0;
+    transition: opacity .4s ease-in;
+}
+
+/* #d-1, #d-2, #d-3, #d-4, #d-5, #d-6 {
+    opacity: 0;
+} */
+
+.show {
+    opacity: 1 !important;
+}
