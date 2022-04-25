@@ -4,7 +4,7 @@ const scene1 = new TimelineLite();
 
 scene1.add(
     TweenLite.to(".scroll-down", 1,  {
-        css:{ opacity: 0 },
+        className: '+=hide',
     })
 )
 .add(
