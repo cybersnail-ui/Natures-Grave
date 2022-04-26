@@ -20,7 +20,7 @@ scene1.add(
 
 const scene2 = new ScrollMagic.Scene({
     triggerElement: '.scene-one',
-    duration: 500,
+    duration: 750,
     triggerHook: 0,
 })
 .setTween(scene1)

@@ -533,17 +533,11 @@ footer {
 }
 
 .scroll-down {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    right: 0;
     margin-bottom: 2rem;
     z-index: 1;
     opacity: 1;
     animation: blinker 2s ease-in-out infinite;
+    transition: all .25s ease;
 }
 
 .scroll-down img {
@@ -568,6 +562,9 @@ footer {
     width: 100vw !important;
     height: 100% !important;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .fixed-section .dead, .fixed-section .alive, .fixed-section .gradient {
