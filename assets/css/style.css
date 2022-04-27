@@ -340,7 +340,7 @@ html {
     }
 }
 @media only screen and (max-width: 700px) {
-    .title-container .header {
+    .title-container .header-container h1 {
         font-size: calc(40px + .75vw) !important;
     
     }
@@ -632,8 +632,26 @@ footer {
     pointer-events: none;
 }
 
-.title-container .header {
+.title-container .header-container {
+    display: flex;
+}
+
+.title-container .header-container-space {
+    width: 0vw;
+    height: auto;
+}
+
+.title-container .header-1 {
     width: 100%;
+}
+
+.title-container .header-2 {
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.title-container .header-container h1 {
     color: white;
     font-size: calc(80px + .75vw);
     white-space: nowrap;

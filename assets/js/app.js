@@ -13,6 +13,21 @@ scene1.add(
     })
 )
 .add(
+    TweenLite.to(".header-container-space", 1,  {
+        css:{ width: "5vw" },
+    })
+)
+.add(
+    TweenLite.to(".header-2", 1,  {
+        css:{ width: "200%" },
+    })
+)
+.add(
+    TweenLite.to(".header-2", 1,  {
+        css:{ opacity: 1 },
+    })
+)
+.add(
     TweenLite.to(".sub-header", 1,  {
         css:{ opacity: 1 },
     })
