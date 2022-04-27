@@ -344,7 +344,7 @@ html {
         font-size: calc(40px + .75vw) !important;
     
     }
-    .title-container .sub-header {
+    .title-container .sub-header, .title-container .sub-header-1, .title-container .sub-header-2 {
         font-size: calc(8px + .75vw) !important;
     }    
 }
